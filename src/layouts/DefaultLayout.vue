@@ -1,12 +1,12 @@
-<script>
-//import Components
-import Header from './components/Header.vue';
-import Main from './components/Main.vue';
-import Footer from './components/Footer.vue';
+<script setup>
 </script>
 
 <template>
-
-
+    <Header></Header>
+    <router-view />
+    <Footer></Footer>
 </template>
-<style></style>
+
+<style>
+
+</style>
