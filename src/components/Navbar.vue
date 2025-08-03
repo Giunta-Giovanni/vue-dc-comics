@@ -1,8 +1,8 @@
 <script setup>
-const props = defineProps({
+const {navLinks} = defineProps({
     navLinks: Array
 })
-console.log(props)
+console.log(navLinks)
 </script>
 <template>
         <nav class="navbar navbar-expand-md p-0">
