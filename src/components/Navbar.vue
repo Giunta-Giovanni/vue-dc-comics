@@ -20,24 +20,13 @@ console.log(navLinks)
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">prova</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">prova</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">prova</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">prova</a>
-                    </li>
-                    <!-- {props.navLinks.map(link => (
-                        <li key={link.id} class="nav-item">
-                            {/* utilizzo di un operatore ternario per attivare classe active */}
-                            <a class={`nav-link ${link.id === 3 ? 'act' : ''}`} href={link.url}>{link.text}</a>
-                        </li>
-                    ))} -->
+                    <li 
+                        v-for="link in navLinks" 
+                        :key="link.id"
+                        class="nav-item"
+                    >
+                        <a :class="`nav-link ${link.id === 3 ? 'act' : ''}`" :href=link.url>{{link.text}}</a>
+                </li>     
                 </ul>
             </div>
         </nav>
@@ -53,10 +42,10 @@ console.log(navLinks)
 }
 
 .navbar-nav .nav-link {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-family: "Open Sans";
   color: #000;
-  padding: 1.2rem;
+  padding: 0.7rem;
 }
 
 /* Navbar Effetto Hover */
