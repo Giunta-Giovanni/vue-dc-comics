@@ -8,6 +8,11 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
 import HomePage from "../pages/HomePage.vue";
 import AboutPage from "../pages/AboutPage.vue";
 
+// import Data
+import links from "../data/links";
+
+const {navLinks,categoryLinks1,categoryLinks2,categoryLinks3, categoryLinks4} = links;
+
 // create Routes
 const routes = [
     {
@@ -18,18 +23,11 @@ const routes = [
             { path: '/about', name: 'about', component: AboutPage }
         ],
         props: {
-            navLinks: [
-                { id: 1, text: "CHARACTERS", url: "#", current: false },
-                { id: 2, text: "COMICS", url: "#", current: false },
-                { id: 3, text: "MOVIES", url: "#", current: true },
-                { id: 4, text: "TV", url: "#", current: false },
-                { id: 5, text: "GAMES", url: "#", current: false },
-                { id: 6, text: "COLLECTIBLES", url: "#", current: true },
-                { id: 7, text: "VIDEOS", url: "#", current: false },
-                { id: 8, text: "FANS", url: "#", current: true },
-                { id: 9, text: "NEWS", url: "#", current: false },
-                { id: 10, text: "SHOP", url: "#", current: true }
-            ]
+            navLinks,
+            categoryLinks1,
+            categoryLinks2,
+            categoryLinks3,
+            categoryLinks4
         }
     }
 ]
