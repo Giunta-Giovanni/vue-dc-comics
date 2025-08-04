@@ -58,4 +58,24 @@ console.log(navLinks)
   color: #007bff;
   border-bottom: 1px solid #007bff;
 }
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 120%;
+    width: 100%;
+    z-index: 1050;
+    background-color: #f8f9fa;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.538);
+  }
+}
 </style>

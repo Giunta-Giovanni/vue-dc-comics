@@ -5,8 +5,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import DefaultLayout from "../layouts/DefaultLayout.vue";
 
 // import Pages
-import Home from "../pages/Home.vue";
-import About from "../pages/About.vue";
+import HomePage from "../pages/HomePage.vue";
+import AboutPage from "../pages/AboutPage.vue";
 
 // create Routes
 const routes = [
@@ -14,8 +14,8 @@ const routes = [
         path: '/',
         component: DefaultLayout,
         children: [
-            { path: '', name: 'home', component: Home },
-            { path: '/about', name: 'about', component: About }
+            { path: '', name: 'home', component: HomePage },
+            { path: '/about', name: 'about', component: AboutPage }
         ],
         props: {
             navLinks: [

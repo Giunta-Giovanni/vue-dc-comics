@@ -1,15 +1,15 @@
 <script setup>
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
-const props = defineProps({
+import AppHeader from '../components/AppHeader.vue';
+import AppFooter from '../components/AppFooter.vue';
+const {navLinks} = defineProps({
     navLinks: Array
 })
 </script>
 
 <template>
-    <Header :nav-Links = "navLinks" ></Header>
+    <AppHeader :nav-Links = "navLinks" ></AppHeader>
     <router-view />
-    <Footer></Footer>
+    <AppFooter></AppFooter>
 </template>
 
 <style>

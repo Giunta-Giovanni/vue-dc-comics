@@ -1,7 +1,7 @@
 
 <script setup>
-import Navbar from './Navbar.vue';
-const props = defineProps({
+import AppNavbar from './AppNavbar.vue';
+const {navLinks} = defineProps({
     navLinks: Array
 })
 </script>
@@ -16,7 +16,7 @@ const props = defineProps({
                         </div>
                     </div>
                     <div class="col">
-                      <Navbar :nav-links="navLinks"/>
+                      <AppNavbar :nav-links="navLinks"/>
                     </div>
                 </div>
             </div>
